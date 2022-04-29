@@ -14,4 +14,17 @@ fn main() {
     for j in sr.chars() {
         println!("{}", j);
     }
+
+
+    // print the range of 1 to 100
+    // we put "1..101" cus "1..101-1"
+    // we call this exclusive range
+    for i in 1..11 {
+        println!("{}", i);
+    }
+    // this is inclusive
+    // "..=" includes the 11
+    for i in 1..=11 {
+        println!("{}", i);
+    }
 }
