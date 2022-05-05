@@ -2,6 +2,7 @@ mod clone;
 mod copy;
 mod drop;
 mod fibo;
+mod func;
 
 trait Shape {
     fn area(&self) -> u32;
@@ -48,8 +49,13 @@ fn main() {
     // drop.rs file
     drop::drops();
     println!("\n");
+    // fibo.rs file
     fibo::fibo();
     println!("\n");
+    // func.rs file
+    func::func();
+
+
 
 
 }

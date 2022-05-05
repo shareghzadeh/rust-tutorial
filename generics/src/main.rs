@@ -1,3 +1,5 @@
+mod func;
+mod find_largest;
 // <T> stands for any type you want to use in "x"
 #[derive(Debug)]
 struct AllTypes<T> {
@@ -18,10 +20,6 @@ struct AllTypes<T> {
 // }
 
 
-fn p<T: std::fmt::Debug> (x: T) {
-    println!("{:?}", x);
-}
-
 
 fn main() {
     // in genercs you can use all the types
@@ -38,8 +36,12 @@ fn main() {
     println!("{:?}", f);
     println!("{:?}", c);
 
-    // "p" function
+    println!("\n");
+    // func.rs file
+    func::func();
+    println!("\n");
+    // find_largest.rs
+    find_largest::larg();
 
-    p("hi")
 
 }

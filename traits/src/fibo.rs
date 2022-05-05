@@ -38,4 +38,12 @@ pub fn fibo() {
         println!("{}", j)
     }
 
+    // useing "next()" method
+    let mut f = fib();
+    println!("{:?}", f.next());
+    println!("{:?}", f.next());
+    println!("{:?}", f.next());
+    println!("{:?}", f.next());
+    println!("{:?}", f.next());
+    println!("{:?}", f.next());
 }
